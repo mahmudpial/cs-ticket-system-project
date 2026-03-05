@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Main.css"
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
@@ -308,12 +309,6 @@ export default function Main({ onStatsChange }) {
 
     return (
         <>
-            <style>{`
-                @keyframes slideIn {
-                    from { opacity: 0; transform: translateX(30px); }
-                    to   { opacity: 1; transform: translateX(0); }
-                }
-            `}</style>
 
             <ToastContainer toasts={toasts} />
 
