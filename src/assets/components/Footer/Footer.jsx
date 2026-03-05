@@ -1,3 +1,4 @@
+import "./Footer.css"
 export default function Footer() {
     return (
         <footer className="relative overflow-hidden bg-gradient-to-b from-[#060d1a] to-[#030810] border-t border-sky-500/10 font-sans">
