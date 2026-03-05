@@ -1,0 +1,197 @@
+[
+  {
+    "id": "TKT-001",
+    "title": "Login page not loading",
+    "description": "Users are unable to access the login page. The page times out after 30 seconds with a 504 gateway error. Affecting all browsers.",
+    "customer": {
+      "name": "Sarah Johnson",
+      "email": "sarah.j@techcorp.com",
+      "avatar": "SJ"
+    },
+    "priority": "critical",
+    "status": "in-progress",
+    "createdAt": "2026-03-01T08:14:00Z"
+  },
+  {
+    "id": "TKT-002",
+    "title": "Payment gateway timeout",
+    "description": "Checkout process fails at payment step. Stripe integration returns a timeout error after card details are submitted. Only on mobile devices.",
+    "customer": {
+      "name": "Marcus Lee",
+      "email": "m.lee@shopwave.io",
+      "avatar": "ML"
+    },
+    "priority": "critical",
+    "status": "in-progress",
+    "createdAt": "2026-03-01T09:30:00Z"
+  },
+  {
+    "id": "TKT-003",
+    "title": "Export to CSV broken",
+    "description": "The export button on the reports page downloads an empty CSV file. Data is visible in the UI but not written to the file output.",
+    "customer": {
+      "name": "Priya Nair",
+      "email": "priya@dataflow.co",
+      "avatar": "PN"
+    },
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2026-03-02T10:05:00Z"
+  },
+  {
+    "id": "TKT-004",
+    "title": "Email notifications not sent",
+    "description": "Users stopped receiving order confirmation emails since March 1st. SMTP logs show messages queued but never dispatched.",
+    "customer": {
+      "name": "James Carter",
+      "email": "james@mailhub.net",
+      "avatar": "JC"
+    },
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2026-03-02T11:22:00Z"
+  },
+  {
+    "id": "TKT-005",
+    "title": "Dashboard charts not rendering",
+    "description": "Analytics dashboard shows blank chart areas. Console error: 'Cannot read properties of undefined (reading map)'. Happened after latest deploy.",
+    "customer": {
+      "name": "Olivia Park",
+      "email": "o.park@insightiq.com",
+      "avatar": "OP"
+    },
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2026-03-03T07:48:00Z"
+  },
+  {
+    "id": "TKT-006",
+    "title": "Profile picture upload fails",
+    "description": "Uploading a profile image returns a 413 error. Files under 1MB also fail. Issue started after server migration on Feb 28th.",
+    "customer": {
+      "name": "Ethan Brooks",
+      "email": "ethan.b@userbase.app",
+      "avatar": "EB"
+    },
+    "priority": "medium",
+    "status": "in-progress",
+    "createdAt": "2026-03-03T13:10:00Z"
+  },
+  {
+    "id": "TKT-007",
+    "title": "Search results showing duplicates",
+    "description": "Product search returns duplicate entries for the same item. Appears to be a pagination bug where page 1 results repeat on page 2.",
+    "customer": {
+      "name": "Aisha Mensah",
+      "email": "aisha@storehub.io",
+      "avatar": "AM"
+    },
+    "priority": "medium",
+    "status": "in-progress",
+    "createdAt": "2026-03-03T15:33:00Z"
+  },
+  {
+    "id": "TKT-008",
+    "title": "Two-factor auth code rejected",
+    "description": "Several users report that valid 2FA codes are being rejected on login. Time-sync issue suspected on the authentication server.",
+    "customer": {
+      "name": "Liam Torres",
+      "email": "l.torres@securepass.dev",
+      "avatar": "LT"
+    },
+    "priority": "critical",
+    "status": "in-progress",
+    "createdAt": "2026-03-04T08:00:00Z"
+  },
+  {
+    "id": "TKT-009",
+    "title": "Invoice PDF formatting broken",
+    "description": "Generated invoice PDFs have misaligned columns and missing company logo. Issue only on invoices created after March 2nd.",
+    "customer": {
+      "name": "Nina Rossi",
+      "email": "nina.r@billingpro.eu",
+      "avatar": "NR"
+    },
+    "priority": "medium",
+    "status": "in-progress",
+    "createdAt": "2026-03-04T10:45:00Z"
+  },
+  {
+    "id": "TKT-010",
+    "title": "Dark mode toggle not saving",
+    "description": "User preference for dark mode resets to light mode on page refresh. LocalStorage key is being written but not read correctly on load.",
+    "customer": {
+      "name": "Carlos Diaz",
+      "email": "carlos@uxtools.design",
+      "avatar": "CD"
+    },
+    "priority": "low",
+    "status": "in-progress",
+    "createdAt": "2026-03-04T12:20:00Z"
+  },
+  {
+    "id": "TKT-011",
+    "title": "API rate limit error on bulk import",
+    "description": "Bulk contact import triggers 429 rate limit errors midway. The import tool does not implement request throttling or retry logic.",
+    "customer": {
+      "name": "Fatima Al-Hassan",
+      "email": "fatima@crmplus.ae",
+      "avatar": "FA"
+    },
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2026-03-04T14:05:00Z"
+  },
+  {
+    "id": "TKT-012",
+    "title": "Mobile menu overlapping content",
+    "description": "On screens below 375px, the hamburger navigation menu opens and overlaps page content without a backdrop or close button.",
+    "customer": {
+      "name": "Yuki Tanaka",
+      "email": "yuki.t@mobiledev.jp",
+      "avatar": "YT"
+    },
+    "priority": "low",
+    "status": "resolved",
+    "createdAt": "2026-02-28T09:00:00Z"
+  },
+  {
+    "id": "TKT-013",
+    "title": "Password reset link expired instantly",
+    "description": "Reset password emails are sent but the link expires immediately. Token TTL was accidentally set to 0 seconds in the last config push.",
+    "customer": {
+      "name": "Grace Okonkwo",
+      "email": "grace@authservice.ng",
+      "avatar": "GO"
+    },
+    "priority": "critical",
+    "status": "resolved",
+    "createdAt": "2026-02-27T16:30:00Z"
+  },
+  {
+    "id": "TKT-014",
+    "title": "Timezone mismatch in scheduling",
+    "description": "Scheduled reports are delivered 5 hours late for users in GMT+5 regions. Server time is used instead of the user's profile timezone.",
+    "customer": {
+      "name": "Rajan Mehta",
+      "email": "rajan@reportly.in",
+      "avatar": "RM"
+    },
+    "priority": "medium",
+    "status": "resolved",
+    "createdAt": "2026-02-26T11:15:00Z"
+  },
+  {
+    "id": "TKT-015",
+    "title": "Webhook signature validation failing",
+    "description": "Third-party webhooks are rejected despite correct HMAC signatures. The validation function was trimming trailing newlines from the payload.",
+    "customer": {
+      "name": "Elena Volkov",
+      "email": "elena@integratehub.ru",
+      "avatar": "EV"
+    },
+    "priority": "high",
+    "status": "resolved",
+    "createdAt": "2026-02-25T13:50:00Z"
+  }
+]
