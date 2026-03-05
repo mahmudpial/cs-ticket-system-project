@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Nav.css"
 
 const TicketIcon = () => (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -30,50 +31,6 @@ export default function Navbar() {
 
     return (
         <>
-            <style>{`
-        
-
-        body { font-family: 'Outfit', sans-serif; background: #060d1a; }
-
-        .font-outfit { font-family: 'Outfit', sans-serif; }
-        .font-mono-jb { font-family: 'JetBrains Mono', monospace; }
-
-        @keyframes pulse-dot {
-          0%, 100% { opacity: 1; box-shadow: 0 0 8px #0ea5e9, 0 0 20px rgba(14,165,233,0.4); }
-          50% { opacity: 0.5; box-shadow: 0 0 4px #0ea5e9; }
-        }
-        .animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
-
-        @keyframes slideDown {
-          from { opacity: 0; transform: translateY(-10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-slide-down { animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
-
-        .nav-link-active::after {
-          content: '';
-          position: absolute;
-          bottom: -1px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 20px;
-          height: 2px;
-          background: #0ea5e9;
-          border-radius: 2px;
-          box-shadow: 0 0 6px #0ea5e9;
-        }
-
-        .btn-ticket-shine::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
-          opacity: 0;
-          transition: opacity 0.3s ease;
-        }
-        .btn-ticket-shine:hover::before { opacity: 1; }
-      `}</style>
-
             {/* Navbar */}
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 h-[68px] transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] border-b
